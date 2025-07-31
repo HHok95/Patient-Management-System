@@ -1,0 +1,4 @@
+@token = eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0ZXN0dXNlckB0ZXN0LmNvbSIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTc0OTU1NjU3OSwiZXhwIjoxNzQ5NTkyNTc5fQ.Vn-_tv0gwYdU02KLvDhcKMvP4cJ6RJq_sPnxuIz97ZE
+## validate token 
+GET http://lb-ee239b4a.elb.localhost.localstack.cloud:4004/auth/validate
+Authorization: Bearer {{token}}

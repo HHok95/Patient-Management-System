@@ -1,0 +1,9 @@
+### login request to retreive a token
+POST http://lb-ee239b4a.elb.localhost.localstack.cloud:4004/auth/login
+Content-Type: application/json
+
+{
+  "email": "testuser@test.com",
+  "password": "password123"
+}
+

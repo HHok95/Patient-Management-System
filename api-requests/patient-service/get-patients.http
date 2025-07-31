@@ -1,0 +1,5 @@
+@token = eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0ZXN0dXNlckB0ZXN0LmNvbSIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTc0OTU1ODI5NCwiZXhwIjoxNzQ5NTk0Mjk0fQ.24FlOGXyg7RtnZkN8D3kpK8SL10fJwi2WBWz7adk2XY
+### Get all patients
+GET http://lb-ee239b4a.elb.localhost.localstack.cloud:4004/api/patients
+Authorization: Bearer {{token}}
+

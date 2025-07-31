@@ -1,0 +1,10 @@
+## Update patient details
+PUT http://localhost:4000/patients/123e4567-e89b-12d3-a456-426614174000
+Content-Type: application/json
+
+{
+    "name": "John Doe",
+    "email": "test2@example.com",
+    "address": "321 Main St, Springfield, USA",
+    "dateOfBirth": "1995-01-01"
+}

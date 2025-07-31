@@ -1,0 +1,43 @@
+# Root-level project files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDE files at root level
+.idea/
+*.iws
+*.iml
+*.ipr
+.vscode/
+*.code-workspace
+
+# Root level temporary files
+*.tmp
+*.temp
+*~
+
+# Environment variables (project-wide)
+.env
+.env.local
+.env.*.local
+
+# Docker compose files (if at root)
+docker-compose.yml
+
+# Database Volumes
+db_volumes/
+
+# Documentation build
+/docs/build/
+
+# Root level logs
+*.log
+
+# JVM crash logs
+hs_err_pid*
+
+# Each microservice has its own .gitignore for module-specific ignores

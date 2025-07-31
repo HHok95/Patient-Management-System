@@ -1,0 +1,13 @@
+## Create a new patient entity
+@token = eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0ZXN0dXNlckB0ZXN0LmNvbSIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTc0OTU1ODI5NCwiZXhwIjoxNzQ5NTk0Mjk0fQ.24FlOGXyg7RtnZkN8D3kpK8SL10fJwi2WBWz7adk2XY
+POST http://lb-066e8a11.elb.localhost.localstack.cloud:4000/patients
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+{
+    "name": "John Doe Test2",
+    "email": "test_prod2@example.com",
+    "address": "123 Main St, Springfield, USA",
+    "dateOfBirth": "1990-01-01",
+    "registrationDate": "2023-10-01"
+}
