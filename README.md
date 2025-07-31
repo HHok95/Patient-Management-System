@@ -2,6 +2,19 @@
 
 This repository contains a collection of Spring Boot microservices along with an AWS CDK stack for running them locally using [LocalStack](https://github.com/localstack/localstack).
 
+## Overview
+
+A cloud-native, microservices-based Patient Management System built for scalability, modularity, and security. This project simulates a real-world healthcare backend infrastructure, covering core domains like scheduling, patient records, and user authentication.
+
+### Key Features
+
+- **Modular Microservices Architecture** – Developed using Spring Boot with a clear separation of concerns. Each service follows MVC principles and communicates efficiently using gRPC + Protobuf.
+- **Secure Authentication & Authorization** – Dedicated Auth Service uses JWT tokens with role-based access control to enforce secure interactions between services and users.
+- **API Gateway Integration** – Exposes RESTful APIs through a unified API Gateway for routing, authentication, and rate limiting.
+- **Asynchronous Messaging with Kafka** – Integrates Apache Kafka (via AWS MSK) to decouple services and enable reliable event-driven communication.
+- **Containerization & Deployment** – All services are Dockerized and deployed using AWS ECS behind a load balancer in a secure VPC. Infrastructure is fully reproducible with CloudFormation templates.
+- **Local AWS Simulation** – Uses LocalStack to emulate AWS services locally, enabling faster iteration and testing without cloud costs.
+
 ## Services
 
 | Service | Description | Default Port |
